@@ -67,7 +67,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t impactaGuiBento/python-dataops:latest app/python/
+        run: docker build -t impactaguibento/python-dataops:latest app/python/
         
       - name: Upload python image to Docker Hub
-        run: docker push impactaGuiBento/python-dataops:latest
+        run: docker push impactaguibento/python-dataops:latest
